@@ -1,9 +1,9 @@
 @import url(./style.css);
 
 .newheader {
-    background: var(--fifth-color);
+    background: transparent;
     z-index: 999;
-    position: sticky;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -21,7 +21,7 @@
         max-width: fit-content;
 
         img {
-            width: 150px;
+            width: 100px;
         }
     }
 
@@ -29,9 +29,16 @@
         margin: auto 0;
 
         button {
-            border-radius: 50px;
+            background-color: transparent;
+            border: 1px solid var(--fourth-color);
+            font-weight: 400;
+            padding: 2px 15px;
         }
     }
+}
+
+.newheader.scrolled {
+    background-color: var(--third-color);
 }
 
 .navigate {
@@ -42,21 +49,26 @@
         list-style-type: none;
         gap: 10px;
         margin-bottom: 0;
-        /* justify-content: center; */
+        justify-content: center;
     }
 
     a {
         color: var(--fourth-color) !important;
         transition: border-color 0.5s ease-in-out;
         padding: 0;
-        border-radius: 5px;
+        border-radius: 10px 0 10px 0;
+        padding: 5px 14px;
     }
 
     li {
         background-color: transparent;
         margin: 0;
-        padding: 2px 14px;
         cursor: pointer;
+    }
+
+    nav ul li a.active {
+        background-color: var(--primary-color);
+        color: var(--fourth-color) !important;
     }
 
     li:hover {
@@ -297,8 +309,13 @@ form {
     background-image: url(../images/hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
+    /* background-size: cover; */
+    background-size: 120%;
+    animation: zoomPan 20s infinite alternate ease-in-out;
+
+    .row1 {
+        padding-top: 150px;
+    }
 
     h1 {
         color: var(--fourth-color) !important;
@@ -316,36 +333,129 @@ form {
             margin: 5px 0;
         }
 
-        input {
-            border-right: 1px solid #cacaca;
+        input,
+        .form-control {
+            border-radius: 0 5px 5px 0;
         }
 
-        .form-control {
-            text-align: left;
+        i {
+            font-size: 18px;
+            background-color: var(--fifth-color);
+            margin: auto;
+            padding: 12px 10px;
+            color: var(--fourth-color);
+            width: 40px;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .labelcol {
+            gap: 0;
+        }
+
+        .form-control,
+        input,
+        ::placeholder {
+            font-size: 14px;
         }
     }
 
     form {
         margin-top: 15px;
-        background-color: var(--fourth-color);
+        background-color: rgba(255, 255, 255, 0.7);
         padding: 20px;
         border-radius: 10px;
     }
 }
 
-.usps {
-    text-align: center;
+@keyframes zoomPan {
+  0% {
+    background-size: 120%;
+    background-position: center;
+  }
+  50% {
+    background-size: 130%;
+    background-position: top left;
+  }
+  100% {
+    background-size: 120%;
+    background-position: center;
+  }
+}
+
+.introimages {
+    img {
+        width: 100%;
+    }
 
     .row1 {
-        padding-block: 40px;
+        padding-block: 0;
+        margin-top: -125px;
     }
 }
 
-.text2 {
-    background-color: #f7f7f7;
+.usps {
+    p {
+        line-height: 1.6;
+        font-size: 14px;
+    }
+
+    h3 {
+        color: var(--secondary-color) !important;
+    }
+
+    i {
+        font-size: 25px;
+        box-shadow: 0 0 2px 2px rgba(20, 20, 20, 0.2);
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 0 50%;
+    }
+    
+    .grid .column:hover {
+        cursor: pointer;
+
+        i {
+            background-color: var(--secondary-color);
+            border-radius: 50% 0;
+            color: var(--fourth-color);
+        }
+    }
+}
+
+.way4flytext {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(to right, rgba(20, 20, 20, 0.65), rgba(20, 20, 20, 0.65)), url(../images/water-waves.jpg);
+    text-align: center;
+
+    h2, p {
+        color: var(--fourth-color) !important;
+    }
+
+    .column {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+.way4media {
+    img {
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 0 0 5px 5px rgba(20, 20, 20, 0.3);
+    }
+
+    button {
+        margin-top: 15px;
+    }
 
     p {
-        font-size: 14px;
-        line-height: 1.5;
+        line-height: 1.8;
+    }
+
+    .grid {
+        gap: 40px;
     }
 }

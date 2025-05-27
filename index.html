@@ -33,17 +33,17 @@
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="/">Offers</a></li>
-                            <li><a href="/">Flights</a></li>
-                            <li><a href="/">Domestic Flights</a></li>
-                            <li><a href="/">Holiday</a></li>
-                            <li><a href="/">BLOG</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about.html">Airles</a></li>
+                            <li><a href="/about.html">Flights</a></li>
+                            <li><a href="/about.html">Deals</a></li>
+                            <li><a href="/about.html">Travel Blog</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="right flex gap3">
-                    <button class="button">Call Us!</button>
+                    <a href="tel:+18005189067"><button class="button"><i class="fa-solid fa-phone"></i> Call Us!</button></a>
                 </div>
 
                 <div class="column icon" id="on">
@@ -54,9 +54,9 @@
     </div>
 
     <div class="container1 bg1">
-        <div class="row1">
+        <div class="row1 grid grid1">
             <div class="column">
-                <h1>Fly smart, book now with Gotogate India</h1>
+                <h1>Your Ways Our Deals</h1>
                 <form action="/home/_searchenginehome" method="post" id="onflight">
                     <div class="column radio flex">
                         <div>
@@ -71,34 +71,39 @@
                         </div>
                     </div>
 
-                    <div class="col3 d-flex">
-                        <div class="column d-flex">
-                            <div class="labelcol">
-                                <input name="flying_from" type="text" placeholder="🛫 From" id="flying_from"
-                                    onchange="checkdata();" onclick="this.select();" class="location" />
+                    <div class="col3">
+                        <div class="column d-flex gap3">
+                            <div class="labelcol flex">
+                                <i class="fa-solid fa-plane-departure"></i>
+                                <input name="flying_from" type="text" placeholder="From" id="flying_from"
+                                onchange="checkdata();" onclick="this.select();" class="location" />
                             </div>
-                            <div class="labelcol">
-                                <input name="flying_to" type="text" placeholder="🛬 To" id="flying_to"
+                            <div class="labelcol flex">
+                                <i class="fa-solid fa-plane-arrival"></i>
+                                <input name="flying_to" type="text" placeholder="To" id="flying_to"
                                     onchange="checkdata1();" onclick="this.select();" class="location1" />
                             </div>
                         </div>
-                        <div class="column flex">
-                            <div class="labelcol">
+                        <div class="column flex gap3">
+                            <div class="labelcol flex">
+                                <i class="fa-solid fa-calendar-days"></i>
                                 <input autocomplete="off" class="cal calendar mid-dspc-lt" data-val="true"
                                     data-val-required="Please Select Depart Date" id="from" name="from"
-                                    onclick="this.focus(); this.setSelectionRange(0, 9999);" placeholder="📅 Depart"
+                                    onclick="this.focus(); this.setSelectionRange(0, 9999);" placeholder="Depart"
                                     readonly style="cursor:pointer" type="text" value="" />
                             </div>
-                            <div class="labelcol">
+                            <div class="labelcol flex">
+                                <i class="fa-solid fa-calendar-days"></i>
                                 <input autocomplete="off" class="pad-left calendar1 return" data-val="true"
                                     data-val-required="Please Select Return Date" id="to" name="to"
-                                    onclick="this.focus(); this.setSelectionRange(0, 9999);" placeholder="📅 Return"
+                                    onclick="this.focus(); this.setSelectionRange(0, 9999);" placeholder="Return"
                                     readonly style="cursor:pointer" type="text" value="" />
                             </div>
                         </div>
 
-                        <div class="column d-flex">
-                            <div class="labelcol">
+                        <div class="column d-flex gap3">
+                            <div class="labelcol flex">
+                                <i class="fa-solid fa-user-group"></i>
                                 <div class="dropdown-container">
                                     <div class="form_full">
                                         <div class="form-group">
@@ -369,52 +374,90 @@
                 </form>
             </div>
         </div>
+        <img src="./images/Wave.svg" width="100%" alt="">
+    </div>
+
+    <div class="container1 introimages">
+        <div class="row1 grid grid2">
+            <div class="column"></div>
+            <div class="column"><img src="./images/airoplane-1.png" alt=""></div>
+            <div class="column"></div>
+        </div>
     </div>
 
     <div class="container1 usps">
-        <div class="row1 grid grid2">
+        <div class="row1">
             <div class="column">
-                <h4><img src="./images/icon-1.png" alt=""> Wide selection</h4>
-            </div>
-            <div class="column">
-                <h4><img src="./images/icon-2.png" alt=""> Trusted by 30M passengers a year</h4>
-            </div>
-            <div class="column">
-                <h4><img src="./images/icon-3.png" alt=""> Over 20 years of experience</h4>
+                <h2>Way4Fly: Your Flight Tickets Booking Management Partner</h2>
+                <br>
+                <div class="grid grid2">
+                    <div class="column">
+                        <i class="fa-solid fa-tags"></i>
+                        <h3>Affordable Flight Deals</h3>
+                        <p>Are you looking for something which is cheap and qualitative also? Take a glance at our Cheap Air Tickets Deals in USA to manage your bookings affordably. We always try to provide the best deals on all routes and to that are why filtered the prominent deals behind you.</p>
+                    </div>
+                    <div class="column">
+                        <i class="fa-solid fa-ticket"></i>
+                        <h3>Instant Booking</h3>
+                        <p>The last-minute hassles may create lots of troubles for your journey but the support of Best Air Tickets Booking Agency can solve your all queries and issues related to air journeys. Within a few minutes, you can confirm your air tickets without facing any hassles.</p>
+                    </div>
+                    <div class="column">
+                        <i class="fa-solid fa-headset"></i>
+                        <h3>Robust Customer Support</h3>
+                        <p>No matter it is midnight or a day? When you are browsing on the Air Tickets Booking Search Engine then customer support has become an ideal aspect for you. Our customer care executive helps you to manage your new bookings or upcoming flight deals anytime anywhere.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container1 text2">
-        <div class="row1 grid grid2">
+    <div class="container1 way4flytext">
+        <div class="row1">
             <div class="column">
-                <h3>Flexibility on demand</h3>
-                <p>Make your trip perfect for your needs with Flexible Ticket, Cancellation Guarantee and countless more services to choose from to protect your flight and plan with freedom.</p>
-                <p><a href="#">Discover our services <ion-icon name="arrow-forward-outline"></ion-icon></a></p>
+                <h2>Secure Cheapest Airfare Deals for Your Luxurious & Peaceful Travel</h2>
+                <p>Good to See You on This Page if you are a common sky flyer. Do you know why? Well, The Deals on Flights Booking through Way4Fly can not only manage your complete Travel Budget on International or Domestic Flights Booking But also Ensure Your Journey without Wasting Too Much Time while browsing and scrolling the Best Offers on Airlines Reservations. Maybe you have many doubts regarding your online airlines reservations or you want to choose the best travel package in USA for your destination? Don’t worry; this portal can guide you for your complete travel journey plan. Your Online Airlines Reservations is just a task of 5 Minutes for you at last minute also when you are on the Way4Fly Flights Booking Page.</p>
             </div>
+        </div>
+    </div>
+
+    <div class="container1 way4media">
+        <div class="row1 grid grid1">
+            <div class="column"><img src="./images/media-1.jpg" alt=""></div>
             <div class="column">
-                <h3>Easy to manage</h3>
-                <p>Log in to My Bookings for a world of travel opportunities. Manage your trip, add what you need from a selection of services, get flight info or refund updates - all this and more at My Bookings.</p>
-                <p><a href="#">Log In to My Bookings <ion-icon name="arrow-forward-outline"></ion-icon></a></p>
+                <h2>Your Last Minute Flight Booking Assistant is Way4Fly</h2>
+                <p>How Many Percent Discount You Expect From Us? Maybe 10 or 20 But in Our Weekend Flight Deals & Last Minute Flight Deals For You It Can Also Expand Up to 30 to 40 Percent. As an Intelligent Traveler, you may never want to miss this Plane Tickets Deals in 2020. Your last minute travel management can now go on the right way when you are on the Way4Fly. So, don’t be confused about the best deals on flight tickets booking because Way4Fly is the Appropriate Platform for You to Browse for Best Deals on Airfare.</p>
+                <a href="https://www.way4fly.com/deals/last-minute-flight-deals.aspx"><button class="button">Read More <i class="fa-solid fa-chevron-right"></i></button></a>
             </div>
-            <div class="column">
-                <h3>Save more, travel smarter on the app</h3>
-                <p>Discover unbeatable savings for every destination with the Gotogate app! Enjoy exclusive deals, seamless flight booking, and streamlined travel management—all in one convenient app. Download now and start your journey today!</p>
-                <p><a href="#">Download the app for free <ion-icon name="arrow-forward-outline"></ion-icon></a></p>
-            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container1">
+        <div class="row1">
+            <div class="column"></div>
         </div>
     </div>
 
     <div class="container1">
-        <div class="row1 d-flex gap">
-            <div class="column">
-                <h2>Carbon Offset Solutions</h2>
-                <p>Want to lower your impact? Discover how you can offset your flight’s carbon footprint with us by supporting GoClimate’s projects or by opting for sustainable aviation fuel with SkyNRG.</p>
-                <p><a href="#">Discover more here</a></p>
-            </div>
-            <div class="column">
-                <img src="./images/img-1.png" width="200px" alt="">
-            </div>
+        <div class="row1">
+            <div class="column"></div>
+        </div>
+    </div>
+    
+    <div class="container1">
+        <div class="row1">
+            <div class="column"></div>
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="row1">
+            <div class="column"></div>
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="row1">
+            <div class="column"></div>
         </div>
     </div>
 
@@ -456,7 +499,7 @@
                 <p>© 2025 Cayman Airways. All rights Reserved. </p>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 <script src="./css/file.js"></script>
 <script src="./css/bootstrap.js"></script>

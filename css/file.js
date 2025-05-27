@@ -18,16 +18,20 @@ function mufun() {
   })
 }
 
-function openTab(index) {
-  // Get all tab buttons and content panels
-  const tabs = document.querySelectorAll('.tab-btn');
-  const panels = document.querySelectorAll('.tab-panel');
-  
-  // Remove active class from all tabs and panels
-  tabs.forEach(tab => tab.classList.remove('active'));
-  panels.forEach(panel => panel.classList.remove('active'));
+const currentPath = window.location.pathname;
+const navLinks = document.querySelectorAll(".navigate nav ul li a");
+navLinks.forEach(link => {
+  const linkPath = new URL(link.href).pathname;
+  if (linkPath === currentPath) {
+    link.classList.add("active");
+  }
+});
 
-  // Add active class to the clicked tab and corresponding panel
-  tabs[index].classList.add('active');
-  panels[index].classList.add('active');
-}
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.newheader');
+  if (window.scrollY > 100) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});

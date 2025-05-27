@@ -1,6 +1,6 @@
 /* Global CSS Starts Here*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond');
 /* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display'); */
 
 * {
@@ -14,22 +14,22 @@ body {
 }
 
 :root {
-    --primary-color: #41d3ff;
-    --secondary-color: #00c4ff;
-    --third-color: #4141a5;
+    --primary-color: #ed8323;
+    --secondary-color: #bd681c;
+    --third-color: #464E79;
     --fourth-color: #ffffff;
     --fifth-color: #141414;
     --sixth-color: rgb(114, 54, 141);
     --seventh-color: #006cd2;
     /*fonts*/
-    --primary-font: "Open Sans";
+    --primary-font: "Cormorant Garamond";
     --secondary-font: Poppins;
 }
 
 .row1 {
     width: 1200px;
     margin: auto;
-    padding: 100px 20px;
+    padding: 80px 20px;
     background-color: transparent;
 }
 
@@ -85,19 +85,19 @@ a:hover {
 }
 
 h1 {
-    font-size: 2.2em !important;
+    font-size: 3em !important;
     font-weight: 700 !important;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
-    font-size: 1.8em !important;
+    font-size: 2em !important;
     color: var(--fifth-color) !important;
     font-weight: 700 !important;
 }
 
 h3 {
-    font-size: 1.4em !important;
+    font-size: 1.7em !important;
     color: var(--fifth-color) !important;
     font-weight: 700 !important;
 }
@@ -117,7 +117,7 @@ li {
     background: var(--primary-color);
     padding: 5px 20px;
     border-radius: 0;
-    color: var(--fifth-color);
+    color: var(--fourth-color);
     font-weight: 700;
     border-radius: 5px;
 }
@@ -144,7 +144,7 @@ li {
 
 .grid {
     display: grid;
-    gap: 25px;
+    gap: 20px;
 }
 
 .grid1 {

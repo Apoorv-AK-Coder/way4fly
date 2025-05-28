@@ -368,18 +368,20 @@ form {
 }
 
 @keyframes zoomPan {
-  0% {
-    background-size: 120%;
-    background-position: center;
-  }
-  50% {
-    background-size: 130%;
-    background-position: top left;
-  }
-  100% {
-    background-size: 120%;
-    background-position: center;
-  }
+    0% {
+        background-size: 120%;
+        background-position: center;
+    }
+
+    50% {
+        background-size: 130%;
+        background-position: top left;
+    }
+
+    100% {
+        background-size: 120%;
+        background-position: center;
+    }
 }
 
 .introimages {
@@ -410,7 +412,7 @@ form {
         margin-bottom: 15px;
         border-radius: 0 50%;
     }
-    
+
     .grid .column:hover {
         cursor: pointer;
 
@@ -430,7 +432,8 @@ form {
     background-image: linear-gradient(to right, rgba(20, 20, 20, 0.65), rgba(20, 20, 20, 0.65)), url(../images/water-waves.jpg);
     text-align: center;
 
-    h2, p {
+    h2,
+    p {
         color: var(--fourth-color) !important;
     }
 
@@ -457,5 +460,143 @@ form {
 
     .grid {
         gap: 40px;
+    }
+}
+
+.way4airlines {
+    background-color: #f7f7f7;
+    text-align: center;
+
+    img {
+        height: 40px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+
+    .colum {
+        a {
+            background-color: var(--fourth-color);
+            box-shadow: 0 0 3px 3px rgba(20, 20, 20, 0.2);
+            border-radius: 10px;
+            padding: 35px 15px;
+            margin-inline: 10px;
+            border-radius: 100%;
+            width: fit-content;
+        }
+    }
+
+    a:hover {
+        .column {
+            background-color: var(--secondary-color);
+
+            p {
+                color: var(--fourth-color);
+            }
+        }
+    }
+}
+
+.way4trip {
+    ol {
+        margin-left: 10px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.way4destinations {
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h4 {
+        width: fit-content;
+        position: relative;
+        background-color: var(--primary-color);
+        margin: -18px auto 5px auto !important;
+        color: var(--fourth-color) !important;
+        padding: 5px 15px !important;
+        border-radius: 25px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .slider-container1 {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slider1 {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide1 {
+        min-width: 300px;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 3px 3px rgba(20, 20, 20, 0.1);
+        margin: 10px;
+        text-align: center;
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    .prev-btn1,
+    .next-btn1 {
+        /* position: absolute; */
+        /* top: 50%; */
+        /* transform: translateY(-50%); */
+        background-color: rgba(20, 20, 20, 0.6);
+        color: #fff;
+        border: none;
+        padding: 5px 12px;
+        border-radius: 50px;
+        cursor: pointer;
+        width: fit-content;
+    }
+
+    .prev-btn1 {
+        left: 10px;
+    }
+
+    .next-btn1 {
+        right: 10px;
+    }
+}
+
+.way4cta {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/water-waves.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 3px 3px rgba(20, 20, 20, 0.2);
+    border-radius: 10px;
+    padding: 40px 20px;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+
+    hr {
+        width: 50px;
+        border: 2px solid var(--primary-color);
+        margin:  15px auto;
     }
 }

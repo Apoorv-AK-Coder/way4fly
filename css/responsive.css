@@ -142,4 +142,38 @@
             margin-bottom: 20px;
         }
     }
+
+    .way4cta {
+        width: 100%;
+
+        hr {
+            width: 50px;
+            border: 2px solid var(--primary-color);
+            margin: 15px auto;
+        }
+    }
+
+    .way4flytext {
+        .column {
+            width: 100%;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+    }
+
+    .bg1 {
+        animation: none;
+        background-size: cover;
+        background-position: center;
+
+        .row1 {
+            padding-top: 80px;
+        }
+    }
+
+    .introimages {
+        display: none;
+    }
 }

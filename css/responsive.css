@@ -45,12 +45,6 @@
                 margin: auto 0;
                 flex: 1;
             }
-
-            .left {
-                img {
-                    width: 125px;
-                }
-            }
         }
 
         .right {
@@ -137,9 +131,45 @@
     }
 
     .contact {
+        .leftcol {
+            grid-column: span 1;
+        }
+
+        .gap3 {
+            gap: 10px;
+        }
+
         .right {
-            max-width: 100%;
-            margin-bottom: 20px;
+            box-shadow: 0 0 3px 3px rgba(20, 20, 20, 0.2);
+            border-radius: 10px;
+            margin-bottom: auto;
+
+            h2 {
+                background-color: var(--primary-color);
+                color: var(--fourth-color) !important;
+                padding: 5px 15px;
+                border-radius: 10px 10px 0 0;
+            }
+
+            .column1 {
+                padding: 15px;
+            }
+
+            i {
+                background-color: var(--third-color);
+                color: var(--fourth-color);
+                padding: 10px;
+                border-radius: 50%;
+                margin-bottom: auto;
+            }
+
+            i:hover {
+                background-color: var(--primary-color);
+            }
+
+            hr {
+                margin-block: 10px;
+            }
         }
     }
 
@@ -175,5 +205,33 @@
 
     .introimages {
         display: none;
+    }
+
+    .way4airlines {
+        img {
+            height: 20px;
+        }
+
+        .colum {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+
+            a {
+                padding: 10px;
+                margin: 0;
+            }
+        }
+    }
+
+    .herobg {
+        .row1 {
+            padding-top: 80px;
+        }
+    }
+
+    .way4about {
+        .imgcol {
+            padding: 15px;
+        }
     }
 }

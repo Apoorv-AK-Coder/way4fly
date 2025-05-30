@@ -50,6 +50,8 @@
         gap: 10px;
         margin-bottom: 0;
         justify-content: center;
+        background-color: transparent !important;
+        cursor: pointer;
     }
 
     a {
@@ -273,7 +275,7 @@ form {
     margin: 10px;
     border-radius: 10px;
 
-    ion-icon {
+    i {
         background-color: var(--third-color);
         color: var(--fourth-color);
         padding: 10px;
@@ -364,12 +366,12 @@ form {
 
 @keyframes zoomPan {
     0% {
-        background-size: 120%;
+        background-size: 140%;
         background-position: center;
     }
 
     50% {
-        background-size: 130%;
+        background-size: 150%;
         background-position: top left;
     }
 
@@ -598,6 +600,7 @@ form {
 
 .way4intro {
     text-align: center;
+
     i {
         background-color: var(--primary-color);
         color: var(--fourth-color);
@@ -618,7 +621,7 @@ form {
         width: 100%;
         border-radius: 10px;
     }
-    
+
     .imgcol {
         background-position: center;
         background-repeat: no-repeat;
@@ -639,4 +642,152 @@ form {
     background-size: cover;
     background-attachment: fixed;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(../images/water-waves.jpg);
+}
+
+.majorairlines {
+    img {
+        width: 150px;
+        margin: auto;
+    }
+
+    .grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.way4destination {
+    img {
+        width: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .grid {
+        .column {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            border-radius: 10px;
+            display: grid;
+            align-items: end;
+        }
+
+        h3 {
+            color: var(--fourth-color) !important;
+            background-color: rgba(20, 20, 20, 0.5);
+            padding: 10px 20px;
+            border-radius: 0 0 10px 10px;
+        }
+    }
+
+    .ul {
+        column-count: 4;
+    }
+
+    .ol {
+        column-count: 3;
+    }
+}
+
+.way4reviews {
+    .column {
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid var(--primary-color);
+    }
+
+    i {
+        color: var(--primary-color);
+    }
+
+    p {
+        line-height: 1.7;
+    }
+}
+
+.way4travel {
+    .column {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 3px 3px rgba(20, 20, 20, 0.1);
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        background-color: var(--primary-color);
+        color: var(--fourth-color);
+        border-radius: 25px;
+        width: fit-content;
+        padding: 0 15px;
+        margin: auto !important;
+        font-size: 13px;
+    }
+
+    h4 {
+        margin-bottom: 5px !important;
+    }
+}
+
+.way4blog {
+    img {
+        width: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .grid {
+        .column {
+            border-radius: 10px;
+            box-shadow: 0 0 2px 2px rgba(20, 20, 20, 0.2);
+        }
+
+        .innercol {
+            padding: 15px 15px 15px 0;
+            margin: auto 0;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 13px;
+        }
+
+        b {
+            color: var(--primary-color);
+        }
+    }
+
+    .pagination1 {
+        margin: auto;
+        width: fit-content;
+
+        button {
+            background-color: var(--primary-color);
+            border: none;
+            padding: 5px 9px;
+            color: var(--fourth-color);
+            border-radius: 25px;
+        }
+
+        #page-number {
+            button {
+                margin-inline: 5px;
+                background-color: var(--third-color);
+                padding: 5px 12px;
+                border-radius: 5px;
+            }
+        }
+
+        button.active {
+            box-shadow: 0 0 2px 2px rgba(20, 20, 20, 0.1);
+            color: var(--primary-color);
+            font-weight: 700;
+            background-color: var(--fourth-color) !important;
+        }
+    }
 }

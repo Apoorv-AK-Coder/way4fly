@@ -234,4 +234,20 @@
             padding: 15px;
         }
     }
+
+    .majorairlines {
+        img {
+            width: 100%;
+        }
+
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .way4destination {
+        .ul, .ol {
+            column-count: 1;
+        }
+    }
 }

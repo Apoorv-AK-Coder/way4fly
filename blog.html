@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    <title>Way4Fly | Contact</title>
+    <title>Way4Fly | About</title>
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet">
     <link href="./css/homepax.css" rel="stylesheet">
@@ -55,58 +55,23 @@
     <div class="container1 herobg">
         <div class="row1">
             <div class="column">
-                <h1>Contact Us</h1>
+                <h1>Latest Travel Blogs</h1>
             </div>
         </div>
     </div>
 
-    <div class="container1 contact">
-        <div class="row1 grid grid2">
-            <div class="column leftcol">
-                <h2>Send us a message</h2>
-                <p style="color: var(--primary-color);">Fields marked with an * are required</p>
-                <form action="">
-                    <input type="text" placeholder="Full Name*" name="" id="" required>
-                    <div class="d-flex gap1" style="gap: 5px;">
-                        <input type="tel" placeholder="Phone Number*" name="" id="" required>
-                        <input type="email" placeholder="E-mail*" name="" id="" required>
-                    </div>
-                    <textarea name="" id="" placeholder="Message*" required></textarea>
-                    <button class="button" type="submit">Submit</button>
-                </form>
-            </div>
-            <div class="column right">
-                <h2>Contact Information</h2>
-                <div class="column1">
-                    <div class="flex gap3">
-                        <i class="fa-solid fa-phone"></i>
-                        <p><a href="tel:+18005189067">+1-800-518-9067</a></p>
-                    </div>
-                    <hr>
-                    <div class="flex gap3">
-                        <i class="fa-solid fa-at"></i>
-                        <p><a href="mailto:support@way4fly.com">support@way4fly.com</a></p>
-                    </div>
-                    <hr>
-                    <div class="flex gap3">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p style="font-size: 14px;line-height: 1.5;">SUNRISE TRAVEL LLC 2212 Park Boulevard PR SAN JUAN, 00913 Puerto Rico, United States</p>
-                    </div>
-                    <hr>
-                    <div class="flex gap3">
-                        <i class="fa-solid fa-location-arrow"></i>
-                        <p style="font-size: 14px;line-height: 1.5;">304 S. Jones Blvd Las Vegas NV, 89107 United States</p>
-                    </div>
-                    <hr>
-                    <div>
-                        <p>
-                        <a href="https://www.facebook.com/way4fly1"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/way4fly1"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/way4fly"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://www.pinterest.com/way4fly1"><i class="fa-brands fa-pinterest-p"></i></a>
-                    </p>
-                    </div>
+    <div class="container1 way4blog">
+        <div class="row1">
+            <div class="column">
+                <div class="blog-container grid grid2"></div>
+                <br><br>
+                <div class="pagination1">
+                    <button id="prev-btn"><i class="fa-solid fa-angles-left"></i></button>
+                    <span id="page-number">1</span>
+                    <button id="next-btn"><i class="fa-solid fa-angles-right"></i></button>
                 </div>
+                
+                <script src="./css/blogs.js"></script>
             </div>
         </div>
     </div>
